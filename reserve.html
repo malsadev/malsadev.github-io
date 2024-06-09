@@ -28,11 +28,30 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
+	<style>
+		.navbar-custom {
+      background-color: #000000 !important; /* Black background */
+    }
+		.navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #FFD700 !important; /* Gold text color */
+    }
+    .navbar-custom .nav-link:hover {
+      color: #FFA500 !important; /* Darker gold for hover effect */
+    }
+    .navbar-custom .navbar-toggler {
+      border-color: #FFD700; /* Gold border for toggler */
+    }
+    .navbar-custom .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 215, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Gold icon for toggler */
+    }
+	</style>
+
 </head>
 
 <body>
 
-	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+	<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom sticky-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">

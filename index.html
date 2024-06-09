@@ -97,6 +97,60 @@
             box-sizing: border-box;
         }
 
+        div .test {
+            background: #bb8914 !important;
+        }
+
+        div .test1 {
+            background: #bb8914 !important;
+        }
+
+        .navbar-custom {
+      background-color: #000000 !important; /* Black background */
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #FFD700 !important; /* Gold text color */
+    }
+    .navbar-custom .nav-link:hover {
+      color: #FFA500 !important; /* Darker gold for hover effect */
+    }
+    .navbar-custom .navbar-toggler {
+      border-color: #FFD700; /* Gold border for toggler */
+    }
+    .navbar-custom .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 215, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Gold icon for toggler */
+    }
+
+    /* .footer-custom {
+      background-color: #000000; /* Black background */
+      /* color: #FFD700 !important; Gold text color */
+    /* } */
+    .footer-custom a {
+      color: #FFD700 !important; /* Gold text color */
+    }
+    .footer-custom a:hover {
+      color: #FFA500; /* Darker gold for hover effect */
+    }
+    .footer-custom svg.bi {
+      fill: #FFD700; /* Gold icon color */
+    } 
+
+    .card {
+      border: 5px solid #e6e4de; /* Ensure the border is properly set */
+      border-radius: 20px; /* Rounded corners */
+      overflow: hidden; /* Ensure content respects the rounded corners */
+    }
+    .card img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .card-body {
+      background: #ffbe28;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
         /* .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -113,10 +167,10 @@
     </style>
 </head>
 
-<body>
+<body style="background: #bb8914;">
     <!-- <h1>Hello, world!</h1> -->
     <!-- Nav bar, need to edit text, remove search and add logo to right end -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -148,10 +202,10 @@
 
     <div class="bg" style="font-family: 'Open Sans', sans-serif; background-color: #3b2f2f; color: white;">
         <div class="centered-text">
-            <h1 style="font-family: 'Merriweather', serif; font-size: 3rem; font-weight: 300; color: #fff;">The Imperial Barber</h1>
+            <h1 style="font-family: 'Merriweather', serif; font-size: 3rem; font-weight: 300; color: #fff;">The Prestige Barber</h1>
             <p style="font-size: 1.25rem; font-weight: 400;">At The Prestige Barber Shop, we believe that a great haircut is more than just a style – it's an experience. Our barbers are not only skilled in the latest cutting techniques and trends but are also masters of the timeless classics. Whether you're looking for a modern fade, a traditional shave, or a unique hairstyle that reflects your personal taste, our barbers will make sure you leave with a look that suits you perfectly.</p>
             <!-- <a href="reserve.html" type="button" class="btn btn-outline-primary">Book Now!</a> -->
-            <a href="reserve.html" class="btn btn-primary btn-lg" style="padding: 15px 30px; margin-top: 30px; background-color: #110d01; border-color: #ffc107;">Book Now!</a>
+            <a href="reserve.html" class="btn btn-primary btn-lg" style="padding: 15px 30px; margin-top: 30px; background-color: #110d01; border-color: #ffc107; font-family: 'Merriweather', serif; font-weight: 500;">Book Now!</a>
 
 
         </div>
@@ -160,27 +214,27 @@
     <!-- <div class="b-example-divider"></div> -->
 
     <!-- Services -->
-    <div id="services">
+    <div id="services" style="background: #bb8914;">
 
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Our Exclusive Haircut Collection</h1>
-                    <p class="lead text-body-secondary">Discover the latest trends and timeless classics in men's haircuts. Each style is crafted by our expert barbers to keep you looking sharp and confident.</p>
+                    <h1 class="fw-light" style="font-family: 'Merriweather', serif; font-size: 3rem; font-weight: 300; color: #fff;">Our Exclusive Haircut Collection</h1>
+                    <p class="lead text-body-secondary" style="font-family: 'Merriweather', serif; font-weight: 400">Discover the latest trends and timeless classics in men's haircuts. Each style is crafted by our expert barbers to keep you looking sharp and confident.</p>
                     <p>
-                        <a href="reserve.html" class="btn btn-primary my-2">Book Now!</a>
-                        <a href="#location" class="btn btn-secondary my-2">Location</a>
+                        <a href="reserve.html" class="btn btn-secondary my-2" style="padding: 15px 30px; margin-top: 30px; background-color: #110d01; border-color: #ffc107; font-family: 'Merriweather', serif; font-weight: 500;">Book Now!</a>
+                        <a href="#location" class="btn btn-secondary my-2" style="padding: 15px 30px; margin-top: 30px; background-color: #110d01; border-color: #ffc107; font-family: 'Merriweather', serif; font-weight: 500;">Location</a>
                     </p>
                 </div>
             </div>
         </section>
 
-        <div class="album py-5 bg-body-tertiary">
-            <div class="container">
+        <div class="album py-5 bg-body-tertiary test">
+            <div class="container" style="background: #bb8914;">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm" style="border: #e6e4de; border: radius 2px;">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="225"
                                 src="img/7a2f5f74b88f4df521f102166700d2f2.jpg" role="img" aria-label="Placeholder: Thumbnail"
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -188,21 +242,22 @@
                                 <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
                                     fill="#eceeef" dy=".3em">Thumbnail</text> -->
                                 </img>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card-body" style="background: #ffbe28;">
                                 <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-body-secondary">Classic Haircut</small>
                                     <!-- <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div> -->
-                                    <small class="text-body-secondary">9 mins</small>
+                                    <small class="text-body-secondary">30$</small>
                                 </div>
+                                <p class="card-text">A timeless haircut featuring short sides and back with a gradual taper to a longer top. This versatile style suits any occasion and is easy to maintain, offering a polished and refined look. Perfect for those seeking a classic, professional appearance.</p>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm" style="border: #e6e4de; border: radius 2px;">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="225"
                             src="img/main-qimg-212b9d9887fe38ce38fe79020a3936d5.jpeg" role="img" aria-label="Placeholder: Thumbnail"
                             preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -210,22 +265,23 @@
                             <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
                                 fill="#eceeef" dy=".3em">Thumbnail</text> -->
                             </img>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card-body" style="background: #ffbe28;">
                                 <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-body-secondary">Fade Cut</small>
                                     <!-- <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div> -->
-                                    <small class="text-body-secondary">9 mins</small>
+                                    <small class="text-body-secondary">35$</small>
                                 </div>
+                                <p class="card-text">A modern and stylish haircut featuring a seamless transition from short to longer hair. The expertly blended fade starts from a close shave at the sides and back, gradually increasing in length towards the top. Perfect for a sharp look that complements any style.</p>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="card shadow-sm">
+                        <!-- <div class="card shadow-sm"> -->
+                            <div class="card shadow-sm" style="border: #e6e4de; border: radius 2px;">
                                 <img class="bd-placeholder-img card-img-top" width="100%" height="225"
                                 src="img/1998b59088e9dfd638dfca58a7dcbc31.jpg" role="img" aria-label="Placeholder: Thumbnail"
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -233,16 +289,17 @@
                                 <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
                                     fill="#eceeef" dy=".3em">Thumbnail</text> -->
                                 </img>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card-body" style="background: #ffbe28; ">
                                 <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-body-secondary">Beard Sculpting</small>
                                     <!-- <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div> -->
-                                    <small class="text-body-secondary">9 mins</small>
+                                    <small class="text-body-secondary">20$</small>
                                 </div>
+                                <p class="card-text"> Precision trimming and shaping to achieve a well-groomed, stylish beard. Our expert barbers tailor the service to enhance your facial features and suit your personal style, ensuring a sharp and polished appearance. Perfect for beard enthusiasts.</p>
+                                
                             </div>
                         </div>
                     </div>
@@ -605,26 +662,26 @@
         </button>
       </div> -->
 
-    <div class="b-example-divider"></div>
+    <!-- <div class="b-example-divider"></div> -->
 
     <div class="my-5" id="location">
-        <div class="p-5 text-center bg-body-tertiary">
+        <div class="p-5 text-center bg-body-tertiary test1">
             <div class="container py-5">
                 <!-- <h1 class="text-body-emphasis">Visit Us at The Prestige Barber Shop</h1> -->
-                <h3>Location</h3>
-                <p class="col-lg-8 mx-auto lead">
+                <h3 style="font-family: 'Merriweather', serif; font-size: 2.5rem; font-weight: 300; color: #fff;">Location</h3>
+                <p class="col-lg-8 mx-auto lead" style="font-family: 'Merriweather', serif; font-weight: 400">
                     123 Style Avenue, Groomsville, NY 45678
                 </p>
-                <h3>Business Hours</h3>
+                <h3 style="font-family: 'Merriweather', serif; font-size: 2.5rem; font-weight: 300; color: #fff;">Business Hours</h3>
                 <p class="col-lg-8 mx-auto lead">
-                    <ul style="list-style-type: none; padding: 0;">
+                    <ul style="font-family: 'Merriweather', serif; font-weight: 500; list-style-type: none; padding: 0; ">
                         <li>Monday to Friday: 9 AM – 7 PM</li>
                         <li>Saturday: 8 AM – 5 PM</li>
                         <li>Sunday: Closed</li>
                     </ul>
                 </p>
-                <h3>Phone Number</h3>
-                <p class="col-lg-8 mx-auto lead">
+                <h3 style="font-family: 'Merriweather', serif; font-size: 2.5rem; font-weight: 300; color: #fff;">Phone Number</h3>
+                <p class="col-lg-8 mx-auto lead" style="font-family: 'Merriweather', serif; font-weight: 400">
                     Call us at (123) 456-7890 to book your appointment today! 
                 </p>
             </div>
@@ -635,14 +692,14 @@
 
 
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <footer class="footer-custom d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                     <svg class="bi" width="30" height="24">
                         <use xlink:href="#bootstrap"></use>
                     </svg>
                 </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Prestige Barber, Inc</span>
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
